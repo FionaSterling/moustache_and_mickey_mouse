@@ -1,0 +1,125 @@
+/*imports all styles from eyes.css, can be overwritten by modifying that style*/
+@import"eyes.css"; /*This imports other CSS files into this CSS file*/
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css") This imports bootstrap into the CSS file - instead of doing it in the HTML file */
+
+p::first-letter {
+  font-size: 150%;
+  color: steelblue;
+  font-family: fantasy;
+}
+
+p::first-line {
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+p {
+  font-size: 150%;
+}
+ #pringles {
+   letter-spacing: 10px;
+   color: red;
+ }
+.moustache {
+  width: 180px;
+  height: 180px;
+  color: steelblue;
+  position: absolute;
+  border-radius: 50%;
+  top: 150px;
+  left: 150px;
+  box-shadow:
+    150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor;
+}
+
+.moustache::before {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 7px;
+  content: ""; /*set to empty string so it shows up*/
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-60deg);
+  transform-origin: 210px;
+}
+
+.moustache::after {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 385px;
+  content: ""; /*set to empty string so it shows up*/
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 100% 0;
+  transform: rotate(60deg);
+  transform-origin: left 235px;
+}
+
+.ears {
+  width: 180px;
+  height: 180px;
+  color: black;
+  position: absolute;
+  border-radius: 100%;
+  top: 135px;
+  left: 515px;
+  box-shadow:
+    360px 100px 0 0 currentColor,
+    605px 100px 0 0 currentColor;
+}
+
+.head {
+  width: 300px;
+  height: 300px;
+  color: black;
+  position: absolute;
+  border-radius: 100%;
+  top: 250px;
+  left: 525px;
+  box-shadow:
+    410px 100px 0 0 currentColor;
+}
+
+.nose {
+  width: 40px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  border-radius: 100%;
+  top: 390px;
+  left: 605px;
+  box-shadow:
+  460px 100px 0 0 currentColor;
+}
+
+.mouth::before {
+  width: 95px;
+  height: 65px;
+  position: absolute;
+  top: 555px;
+  left: 1038px;
+  color: red;
+  content: ""; /*set to empty string so it shows up*/
+  border-top: solid 20px currentColor;
+  border-radius: 100%;
+  /* transform: rotate(-60deg);
+  transform-origin: 210px; */
+}
+
+.mickey_eyes {
+  width: 30px;
+  height: 30px;
+  color: white;
+  position: absolute;
+  border-radius: 100%;
+  top: 340px;
+  left: 618px;
+  box-shadow:
+    400px 100px 0 0 currentColor,
+    500px 100px 0 0 currentColor;
+}
